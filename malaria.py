@@ -22,7 +22,7 @@ import base64
 
 
 
-st.set_page_config(page_title='Mycobacterium Drug prediction',layout='centered')
+st.set_page_config(page_title='Malaria Drug prediction',layout='centered')
 
 
 
@@ -80,15 +80,15 @@ def filedownload(df):
 
 
 st.markdown("""
-# Malaria Drug discovery Prediction App (Mycobacterium)
+# Malaria Drug discovery Prediction App (Plasmodium falciparum)
 
-This app allows you to predict the bioactivity towards inhibting the `Mycobacterium` enzyme. `Mycobacterium` is a drug target for Tuberculosis disease.
+This app allows you to predict the bioactivity towards inhibting the `Plasmepsin 2` enzyme. `Plasmepsin 2` is a drug target for Malaria SIckness.
 
-**Credits**
-- App built in `Python` + `Streamlit` by [Group 7)
-- Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
----
-""")
+#**Credits**
+#- App built in `Python` + `Streamlit` by [Group 7)
+#- Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
+#---
+#""")
 
 
 
