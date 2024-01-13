@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import numpy as np
 from streamlit_option_menu import option_menu
 import matplotlib.pyplot as plt
@@ -400,6 +399,3 @@ if st.sidebar.button('Predict'):
     multi(desc_subset)
 # else:
 #     st.info('Upload input data in the sidebar to start!')
-    
->>>>>>> 340d3827585cc35c9d159acea817019c14c86c53
->>>>>>> 39a91be2cb568c6f414864d31f4ee89b263eea9e
