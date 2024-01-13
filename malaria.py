@@ -84,8 +84,8 @@ st.markdown("""
 
 This app allows you to predict the bioactivity towards inhibting the `Mycobacterium` enzyme. `Mycobacterium` is a drug target for Tuberculosis disease.
 
-**Credits**
-- App built in `Python` + `Streamlit` by [Group 7)
+**NOTE**
+- App built in `Python` + `Streamlit`
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
 ---
 """)
