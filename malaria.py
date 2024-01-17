@@ -78,7 +78,6 @@ def filedownload(df):
     href = f'<a href="data:file/csv;base64,{b64}" download="prediction.csv">Download your Predictions</a>'
     return href
 
-Plasmodium falciparum
 st.markdown("""
 # Malaria Drug discovery Prediction App (Plasmodium falciparum)
 
