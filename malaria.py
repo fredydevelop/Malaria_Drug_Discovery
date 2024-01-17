@@ -22,7 +22,7 @@ import base64
 
 
 
-st.set_page_config(page_title='Mycobacterium Drug prediction',layout='centered')
+st.set_page_config(page_title='Malaria Plasmodium falciparum Drug prediction',layout='centered')
 
 
 
@@ -78,11 +78,11 @@ def filedownload(df):
     href = f'<a href="data:file/csv;base64,{b64}" download="prediction.csv">Download your Predictions</a>'
     return href
 
-
+Plasmodium falciparum
 st.markdown("""
-# Malaria Drug discovery Prediction App (Mycobacterium)
+# Malaria Drug discovery Prediction App (Plasmodium falciparum)
 
-This app allows you to predict the bioactivity towards inhibting the `Mycobacterium` enzyme. `Mycobacterium` is a drug target for Tuberculosis disease.
+This app allows you to predict the bioactivity towards inhibting the `Plasmodium falciparum. ` Plasmepsin 2` is a drug target for Plasmodium Falciparum.
 
 **NOTE**
 - App built in `Python` + `Streamlit`
