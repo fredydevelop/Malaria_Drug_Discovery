@@ -104,7 +104,7 @@ if uploaded_file:
     st.dataframe(load_data)
 
     if uploaded_file is not None:
-        st.sidebar.button('Predict'):
+        st.sidebar.button('Predict')
         
         with st.spinner("Calculating descriptors..."):
             desc_calc()
