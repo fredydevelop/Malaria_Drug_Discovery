@@ -106,6 +106,7 @@ if uploaded_file:
     if uploaded_file is not None:
         st.sidebar.button('Predict')
         
+    if st.sidebar.button('predict'):
         with st.spinner("Calculating descriptors..."):
             desc_calc()
     
