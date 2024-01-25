@@ -103,29 +103,30 @@ if uploaded_file:
     st.header('**Original input data**')
     st.dataframe(load_data)
 
-if st.sidebar.button('Predict'):
+    if uploaded_file is not None:
+        st.sidebar.button('Predict'):
+        
+        with st.spinner("Calculating descriptors..."):
+            desc_calc()
     
-    with st.spinner("Calculating descriptors..."):
-        desc_calc()
-
-
-    # Read in calculated descriptors and display the dataframe
-    st.header('**Calculated molecular descriptors**')
-    desc = pd.read_csv('descriptors_output.csv')
-    namer=desc["Name"]
-    st.write(desc)
-    st.write(desc.shape)
-
-    # # Read descriptor list used in previously built model
-    st.header('**Subset of descriptors from previously built models**')
-    Xlist = list(pd.read_csv('descriptor_list.csv').columns)
-    desc_subset = desc[Xlist]
-    st.write(desc_subset)
-    st.write(desc_subset.shape)
-
-    # # Apply trained model to make prediction on query compounds
-    desc_subset.columns = range(desc_subset.shape[1])
-
-    multi(desc_subset)
+    
+        # Read in calculated descriptors and display the dataframe
+        st.header('**Calculated molecular descriptors**')
+        desc = pd.read_csv('descriptors_output.csv')
+        namer=desc["Name"]
+        st.write(desc)
+        st.write(desc.shape)
+    
+        # # Read descriptor list used in previously built model
+        st.header('**Subset of descriptors from previously built models**')
+        Xlist = list(pd.read_csv('descriptor_list.csv').columns)
+        desc_subset = desc[Xlist]
+        st.write(desc_subset)
+        st.write(desc_subset.shape)
+    
+        # # Apply trained model to make prediction on query compounds
+        desc_subset.columns = range(desc_subset.shape[1])
+    
+        multi(desc_subset)
 # else:
 #     st.info('Upload input data in the sidebar to start!')
