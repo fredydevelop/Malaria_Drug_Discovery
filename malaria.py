@@ -94,7 +94,7 @@ This app allows you to predict the bioactivity towards inhibting the `Plasmodium
 
 
 with st.sidebar:
-    st.image("malaria marvel.jpg")
+    st.image("malaria_marvel-removebg-preview.png")
     st.write()
     st.header('1. Upload your CSV data')
     
