@@ -78,6 +78,8 @@ def filedownload(df):
     href = f'<a href="data:file/csv;base64,{b64}" download="prediction.csv">Download your Predictions</a>'
     return href
 
+st.image("malaria_marvel-removebg-preview.png")
+st.write()
 st.markdown("""
 # Malaria Drug discovery Prediction App (Plasmodium falciparum)
 
@@ -94,7 +96,7 @@ This app allows you to predict the bioactivity towards inhibting the `Plasmodium
 
 
 with st.sidebar:
-    st.image("malaria_marvel-removebg-preview.png")
+    
     st.write()
     st.header('1. Upload your CSV data')
     
