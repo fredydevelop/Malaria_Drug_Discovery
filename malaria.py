@@ -78,7 +78,7 @@ def filedownload(df):
     href = f'<a href="data:file/csv;base64,{b64}" download="prediction.csv">Download your Predictions</a>'
     return href
 
-st.image("malaria_marvel-removebg-preview.png")
+st.image("malaria_marvel-removebg-preview.png",width=120)
 st.write()
 st.markdown("""
 # Malaria Drug discovery Prediction App (Plasmodium falciparum)
